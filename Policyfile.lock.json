@@ -1,0 +1,524 @@
+{
+  "revision_id": "a70fbd3cece4db7d9a291756f6e8676faed15de773a2e9720933463654fcb6e5",
+  "name": "chef-server-monitoring",
+  "run_list": [
+    "recipe[chef-server-monitoring::default]"
+  ],
+  "cookbook_locks": {
+    "chef-server-monitoring": {
+      "version": "0.1.0",
+      "identifier": "90ffcfeafffa339927b23de3566d6ed7fae4a74a",
+      "dotted_decimal_identifier": "40813665112291891.43109317932701293.121873906313034",
+      "source": "cookbooks/chef-server-monitoring",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": null,
+        "working_tree_clean": true,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "cookbooks/chef-server-monitoring"
+      }
+    },
+    "redis": {
+      "version": "2.1.1",
+      "identifier": "572ea32e1605949c08babcae05317159d10e71b8",
+      "dotted_decimal_identifier": "24539601361569172.43919694489322801.124630573412792",
+      "cache_key": "redis-24bb91e9a580091b2ddeaeaf4eaa6d5b6b4f2cb0",
+      "origin": "https://github.com/miah/chef-redis.git",
+      "source_options": {
+        "git": "https://github.com/miah/chef-redis.git",
+        "revision": "24bb91e9a580091b2ddeaeaf4eaa6d5b6b4f2cb0"
+      }
+    },
+    "sensu": {
+      "version": "2.11.0",
+      "identifier": "e5d6f7681c32896a99cbd9151e8c74fc455c425c",
+      "dotted_decimal_identifier": "64694127758684809.30005448330780300.128626844254812",
+      "cache_key": "sensu-e49c295be94e5cfc3a51f90830142c054ac9e100",
+      "origin": "https://github.com/sensu/sensu-chef.git",
+      "source_options": {
+        "git": "https://github.com/sensu/sensu-chef.git",
+        "revision": "e49c295be94e5cfc3a51f90830142c054ac9e100"
+      }
+    },
+    "monitor": {
+      "version": "0.0.5",
+      "identifier": "8b00e2b0c47d7c1f6e2ae21c884aaafbe0921d00",
+      "dotted_decimal_identifier": "39125995391057276.8846854739232842.187998781185280",
+      "cache_key": "monitor-150f5a9d9f32cd3dcfc9669156100169916a96fc",
+      "origin": "https://github.com/portertech/chef-monitor.git",
+      "source_options": {
+        "git": "https://github.com/portertech/chef-monitor.git",
+        "revision": "150f5a9d9f32cd3dcfc9669156100169916a96fc"
+      }
+    },
+    "apt": {
+      "version": "2.1.1",
+      "identifier": "b03124c7c1b6b9a07688c3d64f4a78eeefbc45eb",
+      "dotted_decimal_identifier": "49593629941020345.45166326046936906.132967619642859",
+      "cache_key": "apt-2.1.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/2.1.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/2.1.1/download",
+        "version": "2.1.1"
+      }
+    },
+    "rabbitmq": {
+      "version": "2.3.0",
+      "identifier": "a49f83ef498f394778ae39ad2a047a82c2c45c5b",
+      "dotted_decimal_identifier": "46337285184655161.20117413033748996.134702031985755",
+      "cache_key": "rabbitmq-2.3.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/rabbitmq/versions/2.3.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/rabbitmq/versions/2.3.0/download",
+        "version": "2.3.0"
+      }
+    },
+    "build-essential": {
+      "version": "2.2.4",
+      "identifier": "b5e7c8482a2c85345939f89e77ee6c87cb5fdd5a",
+      "dotted_decimal_identifier": "51201818174827653.14734804308097006.119330488442202",
+      "cache_key": "build-essential-2.2.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/2.2.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/2.2.4/download",
+        "version": "2.2.4"
+      }
+    },
+    "runit": {
+      "version": "1.7.4",
+      "identifier": "6d3856b0414bb6676c1dc67e4bac35a2f701a70b",
+      "dotted_decimal_identifier": "30742717436873654.29110797741214636.58974045054731",
+      "cache_key": "runit-1.7.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/runit/versions/1.7.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/runit/versions/1.7.4/download",
+        "version": "1.7.4"
+      }
+    },
+    "yum": {
+      "version": "3.8.2",
+      "identifier": "0019632f8d8ade4a7e8b746ea581db731250a6b0",
+      "dotted_decimal_identifier": "27913790261982.20968285695550849.241287274997424",
+      "cache_key": "yum-3.8.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.8.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.8.2/download",
+        "version": "3.8.2"
+      }
+    },
+    "stunnel": {
+      "version": "2.1.0",
+      "identifier": "22861d8dcee04b4a4db67314632d94feb7dffffc",
+      "dotted_decimal_identifier": "9717610699481163.20914594286691117.163821727514620",
+      "cache_key": "stunnel-2.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/stunnel/versions/2.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/stunnel/versions/2.1.0/download",
+        "version": "2.1.0"
+      }
+    },
+    "discovery": {
+      "version": "0.2.2",
+      "identifier": "3880c04aca1b2a0190e985e90429ff1a21956c1a",
+      "dotted_decimal_identifier": "15904162072632106.440807625131049.280487697673242",
+      "cache_key": "discovery-0.2.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/discovery/versions/0.2.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/discovery/versions/0.2.2/download",
+        "version": "0.2.2"
+      }
+    },
+    "windows": {
+      "version": "1.38.4",
+      "identifier": "beafe34c8bd8d6b2d8f5456adeb9bb47e62c426e",
+      "dotted_decimal_identifier": "53673636351695062.50341093797715641.205917478732398",
+      "cache_key": "windows-1.38.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.38.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.38.4/download",
+        "version": "1.38.4"
+      }
+    },
+    "redisio": {
+      "version": "2.3.0",
+      "identifier": "03080935aa3f2390abff01382352b8ebc14b0f1c",
+      "dotted_decimal_identifier": "853260578209571.40721508371800914.203322699747100",
+      "cache_key": "redisio-2.3.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/redisio/versions/2.3.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/redisio/versions/2.3.0/download",
+        "version": "2.3.0"
+      }
+    },
+    "sudo": {
+      "version": "2.7.2",
+      "identifier": "2acc2abc453ce5b49b364f78bd2c7112f592afc0",
+      "dotted_decimal_identifier": "12046432941194469.50836153371770156.124326243381184",
+      "cache_key": "sudo-2.7.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sudo/versions/2.7.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sudo/versions/2.7.2/download",
+        "version": "2.7.2"
+      }
+    },
+    "uchiwa": {
+      "version": "1.2.0",
+      "identifier": "62b6ad3740cde47b5cd9b5acbc946c02ea10b6c7",
+      "dotted_decimal_identifier": "27785402790235620.34723512261065876.118759772698311",
+      "cache_key": "uchiwa-1.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/uchiwa/versions/1.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/uchiwa/versions/1.2.0/download",
+        "version": "1.2.0"
+      }
+    },
+    "ulimit": {
+      "version": "0.3.3",
+      "identifier": "614f1d1c9cd9f8ee1bfd0e10800a3c313581b5e3",
+      "dotted_decimal_identifier": "27390059193620984.67021818133774346.66182048757219",
+      "cache_key": "ulimit-0.3.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ulimit/versions/0.3.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ulimit/versions/0.3.3/download",
+        "version": "0.3.3"
+      }
+    },
+    "packagecloud": {
+      "version": "0.1.1",
+      "identifier": "9bf356317cbeff82fab66435d6fec1a04854f190",
+      "dotted_decimal_identifier": "43896172913147647.36867408244627198.212894152454544",
+      "cache_key": "packagecloud-0.1.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/packagecloud/versions/0.1.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/packagecloud/versions/0.1.1/download",
+        "version": "0.1.1"
+      }
+    },
+    "erlang": {
+      "version": "1.5.8",
+      "identifier": "702608df2566f9d21d715e7120765f3c438c8cbf",
+      "dotted_decimal_identifier": "31567016936957689.59142117862219894.104712435961023",
+      "cache_key": "erlang-1.5.8-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/erlang/versions/1.5.8/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/erlang/versions/1.5.8/download",
+        "version": "1.5.8"
+      }
+    },
+    "yum-epel": {
+      "version": "0.6.5",
+      "identifier": "22765b0639c3a9be21981f84952c636f2d27587c",
+      "dotted_decimal_identifier": "9700282526712745.53517182822552876.109329150072956",
+      "cache_key": "yum-epel-0.6.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
+        "version": "0.6.5"
+      }
+    },
+    "yum-erlang_solutions": {
+      "version": "0.3.0",
+      "identifier": "714c369fb4985c5112106173fc63f4c6486a65b4",
+      "dotted_decimal_identifier": "31890469859661916.22819334677331043.269132455634356",
+      "cache_key": "yum-erlang_solutions-0.3.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-erlang_solutions/versions/0.3.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-erlang_solutions/versions/0.3.0/download",
+        "version": "0.3.0"
+      }
+    },
+    "chef_handler": {
+      "version": "1.2.0",
+      "identifier": "f1255ebe8b01fd471b4879aeccdbf940d90e388d",
+      "dotted_decimal_identifier": "67876558241202685.20014721439550683.274056914811021",
+      "cache_key": "chef_handler-1.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.2.0/download",
+        "version": "1.2.0"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "chef-server-monitoring",
+        ">= 0.0.0"
+      ],
+      [
+        "redis",
+        ">= 0.0.0"
+      ],
+      [
+        "sensu",
+        ">= 0.0.0"
+      ],
+      [
+        "monitor",
+        ">= 0.0.0"
+      ],
+      [
+        "apt",
+        "= 2.1.1"
+      ],
+      [
+        "rabbitmq",
+        "= 2.3.0"
+      ],
+      [
+        "build-essential",
+        "= 2.2.4"
+      ],
+      [
+        "runit",
+        "= 1.7.4"
+      ],
+      [
+        "yum",
+        "= 3.8.2"
+      ],
+      [
+        "stunnel",
+        "= 2.1.0"
+      ],
+      [
+        "discovery",
+        "= 0.2.2"
+      ],
+      [
+        "windows",
+        "= 1.38.4"
+      ],
+      [
+        "redisio",
+        "= 2.3.0"
+      ],
+      [
+        "sudo",
+        "= 2.7.2"
+      ],
+      [
+        "uchiwa",
+        "= 1.2.0"
+      ],
+      [
+        "ulimit",
+        "= 0.3.3"
+      ],
+      [
+        "packagecloud",
+        "= 0.1.1"
+      ],
+      [
+        "erlang",
+        "= 1.5.8"
+      ],
+      [
+        "yum-epel",
+        "= 0.6.5"
+      ],
+      [
+        "yum-erlang_solutions",
+        "= 0.3.0"
+      ],
+      [
+        "chef_handler",
+        "= 1.2.0"
+      ]
+    ],
+    "dependencies": {
+      "redis (2.1.1)": [
+        [
+          "build-essential",
+          ">= 0.0.0"
+        ],
+        [
+          "runit",
+          ">= 0.0.0"
+        ],
+        [
+          "yum",
+          ">= 0.0.0"
+        ],
+        [
+          "stunnel",
+          ">= 2.0.0"
+        ],
+        [
+          "discovery",
+          ">= 0.2.0"
+        ]
+      ],
+      "sensu (2.11.0)": [
+        [
+          "apt",
+          ">= 0.0.0"
+        ],
+        [
+          "yum",
+          ">= 0.0.0"
+        ],
+        [
+          "windows",
+          ">= 1.8.8"
+        ],
+        [
+          "rabbitmq",
+          ">= 2.0.0"
+        ],
+        [
+          "redisio",
+          ">= 1.7.0"
+        ]
+      ],
+      "monitor (0.0.5)": [
+        [
+          "sensu",
+          ">= 0.0.0"
+        ],
+        [
+          "sudo",
+          ">= 0.0.0"
+        ],
+        [
+          "uchiwa",
+          ">= 0.0.0"
+        ]
+      ],
+      "apt (2.1.1)": [
+
+      ],
+      "rabbitmq (2.3.0)": [
+        [
+          "erlang",
+          ">= 0.9.0"
+        ]
+      ],
+      "build-essential (2.2.4)": [
+
+      ],
+      "runit (1.7.4)": [
+        [
+          "packagecloud",
+          ">= 0.0.0"
+        ]
+      ],
+      "yum (3.8.2)": [
+
+      ],
+      "stunnel (2.1.0)": [
+
+      ],
+      "discovery (0.2.2)": [
+
+      ],
+      "windows (1.38.4)": [
+        [
+          "chef_handler",
+          ">= 0.0.0"
+        ]
+      ],
+      "redisio (2.3.0)": [
+        [
+          "ulimit",
+          ">= 0.1.2"
+        ],
+        [
+          "build-essential",
+          ">= 0.0.0"
+        ]
+      ],
+      "sudo (2.7.2)": [
+
+      ],
+      "uchiwa (1.2.0)": [
+        [
+          "yum",
+          ">= 0.0.0"
+        ],
+        [
+          "apt",
+          ">= 0.0.0"
+        ]
+      ],
+      "ulimit (0.3.3)": [
+
+      ],
+      "packagecloud (0.1.1)": [
+
+      ],
+      "erlang (1.5.8)": [
+        [
+          "apt",
+          ">= 1.7.0"
+        ],
+        [
+          "yum",
+          "~> 3.0"
+        ],
+        [
+          "yum-epel",
+          ">= 0.0.0"
+        ],
+        [
+          "yum-erlang_solutions",
+          ">= 0.0.0"
+        ],
+        [
+          "build-essential",
+          ">= 0.0.0"
+        ]
+      ],
+      "yum-epel (0.6.5)": [
+        [
+          "yum",
+          "~> 3.2"
+        ]
+      ],
+      "yum-erlang_solutions (0.3.0)": [
+        [
+          "yum",
+          "~> 3.2"
+        ],
+        [
+          "yum-epel",
+          ">= 0.0.0"
+        ]
+      ],
+      "chef_handler (1.2.0)": [
+
+      ],
+      "chef-server-monitoring (0.1.0)": [
+        [
+          "sensu",
+          ">= 0.0.0"
+        ],
+        [
+          "monitor",
+          ">= 0.0.0"
+        ],
+        [
+          "apt",
+          "= 2.1.1"
+        ],
+        [
+          "rabbitmq",
+          "= 2.3.0"
+        ]
+      ]
+    }
+  }
+}
