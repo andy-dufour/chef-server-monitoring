@@ -11,3 +11,6 @@ depends 'monitor'
 
 depends 'apt', '= 2.1.1'
 depends 'rabbitmq', '= 2.3.0'
+depends 'graphite'
+depends 'runit'
+depends 'apache2'
