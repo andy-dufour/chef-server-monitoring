@@ -14,7 +14,7 @@ platforms:
       - ["private_network", {ip: "192.168.56.50"}]
       customize:
         cpus: 1
-        memory: 1024
+        memory: 2048
 
 suites:
   - name: default
