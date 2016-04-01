@@ -4,5 +4,4 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-include_recipe 'tick-stack::influx'
-include_recipe 'tick-stack::telegraf'
+include_recipe 'cs-influx::influx'

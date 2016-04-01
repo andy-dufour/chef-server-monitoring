@@ -1,7 +1,0 @@
-name 'tick-stack'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'all_rights'
-description 'Installs/Configures tick-stack'
-long_description 'Installs/Configures tick-stack'
-version '0.1.0'

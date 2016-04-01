@@ -14,7 +14,9 @@ run_list "cs-monitor::default"
 
 # Specify a custom source for a single cookbook:
 cookbook "cs-monitor", path: "cookbooks/cs-monitor"
-cookbook "redis", git: "https://github.com/miah/chef-redis.git"
-cookbook "sensu", git: "https://github.com/sensu/sensu-chef.git"
-cookbook "monitor", path: "cookbooks/chef-monitor"
-cookbook "tick-stack", path: "cookbooks/tick-stack"
+#cookbook "redis", git: "https://github.com/miah/chef-redis.git"
+#cookbook "sensu", git: "https://github.com/sensu/sensu-chef.git"
+#cookbook "monitor", path: "cookbooks/chef-monitor"
+cookbook "cs-influx", path: "cookbooks/cs-influx"
+cookbook 'chef-grafana', git: 'https://github.com/chef-cookbooks/chef-grafana'
+cookbook 'cs-grafana', path: 'cookbooks/cs-grafana'

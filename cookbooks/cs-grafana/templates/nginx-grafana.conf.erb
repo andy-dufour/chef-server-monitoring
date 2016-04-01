@@ -1,0 +1,13 @@
+upstream grafana {
+    server 127.0.0.1:3000;
+}
+
+server {
+    listen 80;
+    server_name <%= node.name %> <%= node['ipaddress'] %>;
+    access_log            /var/log/nginx/<%= node.name %>.access.log;
+
+    location "/" {
+        proxy_pass http://grafana/;
+    }
+}
