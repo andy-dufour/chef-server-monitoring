@@ -238,14 +238,14 @@ reporting-disabled = false
 
 [[graphite]]
   enabled = true
-  # database = "graphite"
+  database = "graphite"
   bind-address = ":2003"
   protocol = "tcp"
   # consistency-level = "one"
   # name-separator = "."
-  tags = ["chef-server=test"]
+  tags = []
   templates = [
-    # Statsd stats
+  # Statsd stats
   "stats.counters.statsd.* ..measurement*",
   # Chef stats
   "stats.counters.*.*.allRequests.* .measurement.measurement.hostname.measurement.aggregation",

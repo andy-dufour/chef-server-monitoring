@@ -1,0 +1,10 @@
+{
+  "id": "check_vmstat",
+  "type": "metric",
+  "command": "/etc/sensu/plugins/check-metrics-vmstat.rb",
+  "subscribers": [
+    "all"
+  ],
+  "interval": 60,
+  "handler": "graphite"
+}

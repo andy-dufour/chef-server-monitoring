@@ -1,0 +1,8 @@
+{
+  "id": "check_disk_usage",
+  "command": "/opt/sensu/embedded/bin/check-disk-usage.rb",
+  "subscribers": [
+    "all"
+  ],
+  "interval": 60
+}

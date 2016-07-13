@@ -14,7 +14,7 @@
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:andy-dufour/chef-server-monitoring.git",
-        "revision": "ba4a8e715f59d316c80baf4dbe8d416f629fa914",
+        "revision": "e92b4394c3169c81bf18361508d9af85786c465c",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -34,7 +34,7 @@
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:andy-dufour/chef-server-monitoring.git",
-        "revision": "ba4a8e715f59d316c80baf4dbe8d416f629fa914",
+        "revision": "e92b4394c3169c81bf18361508d9af85786c465c",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -65,7 +65,7 @@
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:andy-dufour/chef-server-monitoring.git",
-        "revision": "ba4a8e715f59d316c80baf4dbe8d416f629fa914",
+        "revision": "e92b4394c3169c81bf18361508d9af85786c465c",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [

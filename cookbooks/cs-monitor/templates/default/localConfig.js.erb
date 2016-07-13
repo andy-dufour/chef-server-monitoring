@@ -1,0 +1,17 @@
+// Statsd configuration
+{
+  graphite: {
+    legacyNamespace: false,
+  },
+  graphitePort: <%= node['cs-monitor']['statsd']['graphite_port'] %>,
+  graphiteHost: "<%= node['cs-monitor']['statsd']['graphite_host'] %>",
+  port: 8125,
+  // Debug
+  //backends: [ "./backends/graphite", "./backends/console" ],
+  // Graphite
+  backends: [ "./backends/graphite" ],
+  servers: [
+    { server: "./servers/tcp" },
+    { server: "./servers/udp" }
+  ]
+}
