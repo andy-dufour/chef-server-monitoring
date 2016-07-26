@@ -12,7 +12,9 @@ node.override["sensu"]["rabbitmq"]["host"] = master_address
 node.override["sensu"]["redis"]["host"] = master_address
 node.override["sensu"]["api"]["host"] = master_address
 
-
+file '/etc/apt/apt.conf.d/15update-stamp' do
+  action :delete
+end
 include_recipe 'sensu::default'
 
 sensu_client node.name do

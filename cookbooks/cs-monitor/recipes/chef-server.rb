@@ -12,7 +12,7 @@ template '/etc/opscode/chef-server.rb' do
 end
 
 execute 'chef-server-ctl reconfigure' do
-  command 'chef-server-ctl reconfigure'
+  command 'chef-server-ctl reconfigure --accept-license --yes'
   action :nothing
 end
 

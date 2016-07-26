@@ -10,7 +10,9 @@ user 'sensu'
 group 'sensu'
 
 
-
+file '/etc/apt/apt.conf.d/15update-stamp' do
+  action :delete
+end
 
 include_recipe "sensu::rabbitmq"
 include_recipe "sensu::redis"
